@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+}
+
+/* heading and joke */
+.logo h1 {
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000000;
+    letter-spacing: 1.5px;
+    padding: 13px;
+    margin-right: 50px;
+}
+  
+.logo a {
+    text-decoration: none;
+    color: #000000;
+}
+  
+.content {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.socials {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+    background-color: none;
+}
+#soc {
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif
+}
+#socials img {
+    margin-left: 30px;
+    width: 42px;
+    margin-top: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+#socials img:hover {
+    border-radius: 12px;
+    filter: invert(52%) sepia(17%) saturate(5399%) hue-rotate(158deg) brightness(90%) contrast(104%);
+}
+.main {
+    margin-left: 130px;
+    color: rgb(0, 0, 0);
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.main h1 {
+    font-size: 60px;
+    color: rgb(36, 36, 36);
+    letter-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+  
+.main p {
+    margin-top: -20px;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.about {
+    margin-left: 100px;
+    margin-top: 200px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about h1 {
+    font-size: 50px;
+    color: rgb(27, 27, 27);
+    letter-spacing: 3px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about p {
+    color: #2e2e2e;
+    letter-spacing: 1px;
+    width: 700px;
+    margin-top: -20px;
+}
+
+#aboutlogo {
+    margin-left: 250px !important;
+    width: 300px;
+    border-radius: 4px;
+    height: 300px;
+    margin-top: 230px;
+    box-shadow: 3px 3px 20px blue;
+}
+
+#contact {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border: 4px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    color: #1d1d1d;
+    font-weight: 300;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
+    background-size: 200% auto;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #98bcff  51%, #1FA2FF  100%);
+}      
+  
+#contact:hover {
+    background-position: right center;
+    color: #fff;
+    box-shadow: 3px 3px 20px rgb(46, 208, 248);
+    text-decoration: none;
+}
+  
+#mainlogo {
+    margin-left: 400px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 230px;
+    box-shadow: 3px 3px 20px rgb(46, 208, 248);
+    background: slateblue;
+    animation-name: bounce;
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: transform;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+  
+
+/* Styles for logo */
+#logo {
+  float: left;
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline;
+  letter-spacing: 1.5px;
+  padding: 13px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-left: 250px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* Styles for parent div */
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: whitesmoke;
+  z-index: 9999; /* Set a high z-index to make sure it's on top of other elements */
+}
+
+/* Styles for navbar */
+.navbar {
+  display: block;
+  float: right;
+  margin-top: 25px;
+  margin-right: 200px;
+}
+
+/* Styles for navbar links */
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline;
+  letter-spacing: 1.5px;
+  padding: 13px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Styles for navbar links when hovering */
+.navbar a:hover {
+  color: rgb(19, 149, 255) !important;
+}
+#social {
+    visibility: hidden;
+}
+/* Styles to hide elements */
+.hide {
+  display: none;
+}
+.footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: transparent; 
+    text-align: center;
+    border: none;
+}
+.footer h3 {
+    width: 250px;
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.footer h3:hover{
+    color: red;
+}
+@media only screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: black;
+    }
+    #social {
+        visibility: visible;
+    }
+    #logo {
+        display: none;
+    }
+    .content {
+        display: block;
+    }
+    .socials {
+        margin-left: auto;
+        margin-right: 50px;
+    }
+    .about {
+        margin-left: 20px;
+    }
+    #aboutlogo {
+        display: none;
+    }
+    #mainlogo {
+        display: none;
+        border: 10px solid #1fa2ff73;
+        margin-left: 30px;
+        border-radius: 4px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .parent {
+        height: 80px;
+    }
+    .main {
+        display: block;
+        margin-left: 20px;
+        margin-top: 250px;
+    }
+    .navbar {
+        border-radius: 8px;
+        color: #000000;
+        z-index: 2;
+        background-color: transparent;
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-top: 70px;
+        height: 300px;
+        margin-right: auto;
+    }
+    .navbar a {
+        display: block;
+        text-align: center;
+    }
+    .about p {
+        width: 300px;
+    }
+    .hide{
+        display: block;
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        width: 50px;
+    }
+    .navbar {
+        display: block;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+@media only screen and (min-height: 830px) and (max-height: 920px) {
+    .about {
+        margin-top: 400px;
+    }
+}
